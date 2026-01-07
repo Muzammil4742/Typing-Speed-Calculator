@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Typing Practice Web App</h1>
+
+      <h3 class="difficulty-heading js-difficulty">Choose Difficulty Level</h3>
+      <div class="difficulty-btns js-difficulty-btns">
+        <button class="difficulty-btn js-easy" data-level="easy">Easy</button>
+        <button class="difficulty-btn js-medium" data-level="medium">
+          Medium
+        </button>
+        <button class="difficulty-btn js-hard" data-level="hard">Hard</button>
+      </div>
+
+      <p id="sentence" class="js-sentence">Click start to begin.</p>
+      <p id="countdown" class="js-countdown"></p>
+      <textarea
+        id="typing-box"
+        class="hidden js-typing-box"
+        placeholder="Start typing here..."
+        rows="1"
+      ></textarea>
+      <p id="timer" class="js-timmer"></p>
+      <div class="btns">
+        <button id="start-btn" class="js-start-btn">Start</button>
+        <button id="restart-btn" class="js-restart-btn">Restart</button>
+      </div>
+
+      <div id="result" class="js-result"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
